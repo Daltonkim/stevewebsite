@@ -1,0 +1,50 @@
+ul.homework {
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  list-style: none;
+  @media (max-width:767px) {
+    column-count: 1;
+  }
+  li {
+    display: flex;
+    > i {
+      color: $primary;
+      margin: auto 0;
+      display: flex;
+      p {
+        margin: 0 10px;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 2.11;
+        letter-spacing: normal;
+        text-align: left;
+        color: #242424;
+      }
+    }
+  }
+}
+.homework {
+  padding: 15px;
+  &__title {
+    font-size: 60px;
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+    @media (max-width: 767px) {
+      font-size: 40px;
+    }
+  }
+  &__desc {
+    font-size: 18px;
+    color: #242424 !important;
+    padding: 10px 0;
+  }
+}
+.fa-circle:before {
+  content: "\f111";
+  margin: auto;
+}

@@ -1,0 +1,39 @@
+.allyouneedtoknow {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  &__titlecard {
+    text-align: left;
+    > h2 {
+      color: #000;
+      font-size: 60px;
+      font-weight: bold;
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+  }
+  &__bottomcards {
+    display: flex;
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+    &-card {
+      padding: 10px;
+      text-align: center;
+      &-icon {
+        font-size: 45px;
+        color: $primary;
+      }
+      &-title h3 {
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+      }
+      &-description {
+        font-size: 18px;
+        color: $secondary;
+      }
+    }
+  }
+}

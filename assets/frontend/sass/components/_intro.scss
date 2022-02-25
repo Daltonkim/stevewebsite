@@ -1,0 +1,65 @@
+.howitworksintro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: $secondary;
+    opacity: 0.7;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__wrapper {
+    text-align: center;
+    position: relative;
+  }
+  &__title {
+    h1 {
+      font-size: 75.8px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.9;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff !important;
+      @media (max-width:767px) {
+        font-size: 40px;
+      }
+    }
+  }
+  &__top {
+    p {
+      font-size: 44.4px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.01;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff !important;
+      @media (max-width:767px) {
+        font-size: 32px;
+      }
+    }
+  }
+  &__bottom {
+    P {
+      font-size: 32.5px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.9;
+      letter-spacing: 6.5px;
+      text-align: center;
+      color: #ffffff !important;
+    }
+  }
+}

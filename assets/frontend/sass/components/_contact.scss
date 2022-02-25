@@ -1,0 +1,322 @@
+.contact {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0 0;
+  overflow: auto;
+  @media only screen and (max-width: 1024px) {
+    background-image: none !important;
+    padding: 0;
+  }
+  .wrapper {
+    @media only screen and (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  &-form {
+    position: relative;
+    text-align: center;
+    border-radius: 0 !important;
+    &::before {
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, #0049b7, #ff1d58);
+      opacity: 0.7;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &-title {
+      position: relative;
+      color: white !important;
+      font-size: 60.5px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.01;
+      letter-spacing: normal;
+      color: #ffffff;
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+    &-questions {
+      padding: 30px;
+      position: relative;
+      img {
+        width: 45px;
+      }
+      p {
+        color: white !important;
+        font-size: 32.9px;
+        line-height: 1.01;
+        letter-spacing: normal;
+        text-align: center;
+      }
+    }
+    &-location {
+      padding: 30px;
+      position: relative;
+      img {
+        width: 45px;
+      }
+      p {
+        color: white !important;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+      }
+    }
+    &-call {
+      padding: 30px;
+      position: relative;
+      img {
+        width: 45px;
+      }
+      p {
+        color: white !important;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    &-email {
+      padding: 30px;
+      position: relative;
+      img {
+        width: 45px;
+      }
+      p {
+        color: white !important;
+        font-size: 27.9px;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        margin-top: 10px;
+
+      }
+    }
+
+    &-footer {
+      position: relative;
+    }
+  }
+
+  .intro {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+    padding-right: 50px;
+    @media (max-width: 767px) {
+      padding: 15px;
+    }
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+      text-align: center;
+    }
+    img{
+      padding: 40px;
+    }
+    h3,
+    h4 {
+      margin-bottom: 34px;
+      color: $secondary;
+    }
+    .title {
+      &::after {
+        content: url("../images/right.png");
+        padding-left: 15px;
+      }
+    }
+  }
+  .form {
+    float: left;
+    width: 70%;
+    border-radius: 25px;
+    background-color: rgba(82, 46, 134, 0.85);
+    color: $white;
+    padding: 20px;
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+      border-radius: 0;
+      padding: 60px 30px;
+    }
+    .mobile-title {
+      display: none;
+      color: $white;
+      margin-bottom: 35px;
+      @media only screen and (max-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+}
+form select,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  background: $white;
+  padding: 30px 20px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: $primary;
+  @media only screen and (max-width: 768px) {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+input[type="submit"] {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* CF 7 override */
+form.wpcf7-form {
+  padding: 1em 1em 1em 0;
+  background: transparent;
+}
+form.wpcf7-form * {
+  transition: 225ms;
+}
+form.wpcf7-form label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+form.wpcf7-form input,
+form.wpcf7-form select {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0;
+  margin-bottom: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #858585;
+  background: transparent;
+  font-size: 1.2em;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+form.wpcf7-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5em 5px;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  border: 1px solid #858585;
+  background: transparent;
+  font-size: 1.2em;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+form.wpcf7-form input:hover,
+form.wpcf7-form select:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #858585;
+}
+form.wpcf7-form input:focus,
+form.wpcf7-form select:focus {
+  border-bottom: 1px solid #858585;
+  box-shadow: inset 0 -2px 0 #858585;
+  outline: none;
+}
+
+form.wpcf7-form textarea {
+  border: 1px solid #858585;
+  box-shadow: inset 0 -2px 0 #858585;
+  outline: none;
+}
+
+form.wpcf7-form input,
+form.wpcf7-form textarea {
+}
+
+form.wpcf7-form input[type="submit"] {
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 110%;
+  box-shadow: none;
+  color: #fff;
+  line-height: 1.2em;
+  width: calc(50% - 3em);
+  display: inline-block;
+  margin-right: 1em;
+  border-radius: 30px;
+  background-color: #0049b7;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+form.wpcf7-form input[type="submit"]:hover {
+  background-color: $primary;
+  font-weight: 500;
+}
+
+span.wpcf7-not-valid-tip {
+  position: relative;
+  top: -1em;
+  color: #e87676;
+}
+div.wpcf7-response-output {
+  padding: 1em !important;
+  margin: 0 !important;
+}
+
+div.wpcf7 .ajax-loader {
+  display: none;
+  background: none;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  animation: spin 1s cubic-bezier(0.36, 0.09, 0.27, 0.97) infinite;
+  border: 3px solid #dedede;
+  border-top: 3px solid #000000;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes spin {
+  50% {
+    border-top-color: #a7005d;
+  }
+  100% {
+    border-top-color: #000000;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  50% {
+    border-top-color: #a7005d;
+  }
+  100% {
+    border-top-color: #000000;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+  opacity: 0.75;
+}
+
+.form-submit {
+  text-align: center;
+}

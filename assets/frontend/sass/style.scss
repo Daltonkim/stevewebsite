@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixins";
+@import "./global";
+//@import "../css/grayscale.css";
+
+/*
+*   pages
+*/
+@import "./pages/404";
+
+/*
+*   components
+*/
+@import "./components/header";
+@import "./components/footer";
+@import "./components/contact";
+@import "./components/single-hero";
+@import "./components/guarantees";
+@import "./components/ordernow";
+@import "./components/allyouneedtoknow";
+@import "./components/faqs";
+@import "./components/homeworkhelp";
+@import "./components/testimonials";
+@import "./components/intro";
+@import "./components/howitworks";
+@import "./components/_how_it_works_cards";
+@import "./components/ordersection";
+@import "./components/questionsanswers";
+@import "./components/answers";
+@import "./components/social";
+@import "./components/news-overview";
+
+
+
+
+
+
+

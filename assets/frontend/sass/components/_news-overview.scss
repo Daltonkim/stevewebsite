@@ -1,0 +1,212 @@
+.news-overview {
+    &__container {
+        width: 100%;
+    }
+    &__hero {
+        background-image: url('../images/news-overview.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        width: 100%;
+        @media only screen and (max-width: 767px) {
+            height: 480px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            height: 600px;
+        }
+    }
+    &__hero-title {
+        font-family: 'Work Sans';
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 0.42;
+        letter-spacing: normal;
+        text-align: center;
+        color: $secondary;
+        text-transform: capitalize;
+        padding-top: 300px;
+        @media only screen and (max-width: 767px) {
+            padding-top: 220px;
+            font-size: 42px;
+            line-height: 0.9;
+            width: 182px;
+            height: 65px;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 60px;
+            padding-top: 300px;
+        }
+    }
+    &__content-wrapper-container {
+        margin-top: -50px;
+    }
+    &__content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        max-width: 80%;
+        margin: 0 auto;
+        @media only screen and (max-width: 767px) {
+            max-width: 90%;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            max-width: 90%;
+        }
+    }
+    &__content {
+        margin-top: -50px;
+        background-color: #fff;
+        position: relative;
+        width: 90%;
+    }
+    &__card {
+        width: 33.3%;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 50%;
+            padding-right: 0;
+            &:nth-child(odd) {
+                padding-right: 20px;
+            }
+        }
+        &:nth-child(even) {
+            margin: 0;
+        }
+
+    }
+    &__image {
+        border-top: 5px $secondary solid;
+    }
+    &__date {
+        font-family: 'Work Sans';
+        font-size: 16.5px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1d1d1b;
+        padding: 10px 0;
+        @media only screen and (max-width: 767px) {
+            font-size: 11px;
+            line-height: 0.86;
+            color: #000000;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 14px;
+        }
+    }
+    &__line-above {
+        border-top: 6px $secondary solid;
+        width: 160px;
+        @media only screen and (max-width: 767px) {
+            border-top: 3px $secondary  solid;
+            width: 92px;
+        }
+    }
+    &__title {
+        font-family: 'Work Sans';
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.04;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        text-transform: capitalize;
+        padding: 10px 0 0 0;
+        margin-right: 10px;
+        @media only screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 1;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+    &__btn,
+    &__btn:focus,
+    &__btn:active,
+    &__btn:hover  {
+        font-family: 'Work Sans';
+        font-size: 18.5px;
+        font-weight: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        text-align: left;
+        color: $primary;
+        text-transform: capitalize;
+        @media only screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 1.25;
+            margin-bottom: 100px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+    &__pagination {
+        padding-bottom: 100px;
+        margin: 0 auto;
+        @media only screen and (max-width: 767px) {
+            padding-bottom: 50px;
+        }
+        a,
+        a:hover,
+        a:focus {
+            color: #a0a0a0;
+            font-family: 'Work Sans';
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 2.27;
+            letter-spacing: normal;
+            text-align: center;
+            color: #a0a0a0;
+            text-transform: capitalize;
+            @media only screen and (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+        .page-numbers.current {
+            color: #1d1d1b;
+            font-family: 'Work Sans';
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 2.27;
+            letter-spacing: normal;
+            text-align: center;
+            text-transform: capitalize;
+            @media only screen and (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+        .prev.page-numbers,
+        .next.page-numbers {
+            display: none;
+        }
+    }
+    &__page-text {
+        font-family: 'Work Sans';
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 2.27;
+        letter-spacing: normal;
+        text-align: center;
+        color: #a0a0a0;
+        text-transform: capitalize;
+        @media only screen and (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.news-overview__image > img{
+  height: auto !important;
+}

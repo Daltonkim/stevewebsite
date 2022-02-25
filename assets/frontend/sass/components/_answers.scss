@@ -1,0 +1,69 @@
+.answers {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &-desc{
+    padding: 10px 0 25px;
+    color: #242424;
+    font-size: 18px;
+  }
+}
+.steptitle {
+  font-size: 55.7px;
+  font-weight: bold;
+  line-height: 0.9;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0049b7;
+  @media (max-width:767px) {
+    font-size: 30px;
+  }
+}
+.step_title {
+  font-size: 60.6px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.9;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ff1d58 !important;
+  margin: 10px 0 ;
+  @media (max-width:767px) {
+    font-size: 40.6px;
+  }
+}
+.subtitle {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  text-align: left;
+  color: #242424 !important;
+}
+desc {
+  font-size: 22.8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #242424;
+}
+.card-title{
+  font-size: 26px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  background-color: $primary;
+  padding: 10px;
+  border-radius: 15px;
+}

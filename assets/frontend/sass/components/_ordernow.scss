@@ -1,0 +1,14 @@
+.ordernow {
+  padding: 100px 0;
+  width: 100%;
+  background-color: $primary;
+  margin: auto;
+  &__section {
+    margin: auto ;
+    &-desc {
+      p {
+        color: #fff !important;
+      }
+    }
+  }
+}
